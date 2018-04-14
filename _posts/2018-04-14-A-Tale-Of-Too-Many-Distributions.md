@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Teaching Myself Variational Inference
+title: Too Many Distributions!!
 categories: Data Science
 ---
 
@@ -31,9 +31,9 @@ The larger the sample, the more normally shaped the t-distribution becomes. Hmm.
 
 Confidence intervals with t-distributions. If s is the sample standard deviation or the standard error, a 90% confidence interval is the following: 
 
-\[
-\bar{x} \pm t_{n-1} \times (0.05) \times \frac{s}{n}
-\]
+
+$$\bar{x} \pm t_{n-1} \times (0.05) \times \frac{s}{n}$$
+
 
 You have the factor of 0.05 because you're trimming 5% of both ends of the sample. The $t_{n-1}$ is the t-statistic with $n -1$ degrees of freedom.  
 
@@ -44,17 +44,13 @@ You have to know something about the probability of one trial happening/ocurring
 
 Mean: 
 
-\[
-\mathbb{E}[\text{ successes in n trials }] = n \times p
-\]
+$$\mathbb{E}[\text{ successes in n trials }] = n \times p$$
 
 This makes a great deal of intuititve sense.
 
 Variance: 
 
-\[
-\mathbb{E}[\text{ successes in n trials }] = n \times p \times (1-p)
-\]
+$$ n \times p \times (1-p)$$
 
 __The binomial distribution converges to the normal distribution in limit__
 
@@ -66,16 +62,13 @@ So you know the average rate of arrivals, but the Poisson can be useful when you
 
 What you know is this average overall rate which is parameterized by:
 Mean
-\[
-\lambda
-\]
+$$\lambda$$
+
 
 The mean is somehow the same as the variance. That doesn't sound very attractive to me. 
 Variance:
 
-\[
-\lambda
-\]
+$$\lambda$$
 
 __Assumption__: the rate $\lambda$ stays __constant__ over period being considered. 
 You have to divide time periods or areas of space into segments where the rate is roughly equal. I guess I don't completely understand this so I'm gonna need to see some examples. 
@@ -94,9 +87,8 @@ You can apply a goodness-of-fit test (Chi-Square Test) to various rates to deter
 What happens when event rate doesn't remain fixed?? The rate of failure increases as time goes on. 
 Event rate is allowed to change as specified by a shape parameter $\beta$
 
-\[
-\beta = \begin{cases} > 1, \quad \text{probability of an event increases over time}\\ < 1, \quad \text{probability of an event decreases over time} \end{cases}
-\]
+
+$$\beta = \begin{cases} > 1, \quad \text{probability of an event increases over time}\\ < 1, \quad \text{probability of an event decreases over time} \end{cases}$$
 
 __Scale parameter__ $\eta$ is a scale parameter expressed in terms of characteristic life instead of event rate
 
