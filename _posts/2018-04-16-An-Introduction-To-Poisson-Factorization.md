@@ -48,3 +48,5 @@ But wait! Now we're putting a Gamma prior on the rate parameter too? What will t
 2. Does hierarchical structure capture "more diversity"? How? I am not convinced.
 3. How do you pick K, the number of latent features?
 4. How do you pick initial gamma parameters?
+
+## What is the motivation for switching from o
