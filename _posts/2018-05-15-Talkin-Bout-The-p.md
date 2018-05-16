@@ -74,6 +74,9 @@ Because $P(H_0 \text{ is significant}) \propto $ Uniform, if you perform the hyp
 ##Another addendum: Let's not get confused between t-value and p-value
 t-value measure the number of standard deviations your sample is from the mean. This is completely different from $P(D|H_0)$. However, there is one instance in which all of this statistical "fat" works out in your favor. When the population distribution is indeed Gaussian, then the t-value = p-value. 
 
+##Troubleshooting: Awww I can't reject the null hypothesis. but EUREKA! I found all of this extra data in my back pocket
+Good news indeed. p-value tests since they are cdf based, benefit immensely from increases in data. Your probability of rejecting the null hypothesis grows exponentially in proportion to the amount of extra data you can update given that the ground truth really is that the null hypothesis does not hold. Ain't got no good business being anywhere. 
+
 ##Open for further exploration:
 * So then WTF is a F-statistic? 
 * Is there some way to describe degrees of freedom for a complete dodo brain? 
